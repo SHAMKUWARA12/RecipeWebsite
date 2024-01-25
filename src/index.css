@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1px solid rgb(85, 81, 128) ;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 0rem 3rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.navlogo {
+  padding: 20px 0px;
+}
+
+.navelement {
+  text-decoration: none;
+  margin: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.navelement:hover {
+  border: 2px solid rgb(107, 61, 61);
+  border-radius: 5px;
+}
+
+.active {
+  color: rgb(107, 61, 61);
+  font-weight: bold;
+}
+
+.navbartoggle{
+  display: none;
+  cursor: pointer;
+}
+
+/* HERO SECTION STYLING */
+
+
+.loginbtn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 2px solid blue;
+  padding: 4px 45px;
+  border-radius: 30px;
+  color: blue;
+
+}
+
+.loginbtn:hover {
+  color: rgb(28, 6, 154);
+  border: 1px solid rgb(28, 6, 154);
+  outline: 1px solid blue;
+  outline-offset: 2px;
+
+}
+
+.heroimg {
+  width: 23rem;
+}
+
+@keyframes moveUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.img_animated {
+  animation: moveUpDown 2.5s ease-in-out infinite;
+}
+
+
+/* FEATURED RECIPIES STYLING */
+
+.card-img-top {
+  width: 13rem;
+  border-radius: 5px;
+}
+
+.card {
+  box-shadow: 9px 9px 11px -9px #4b2121;
+  margin: 10px;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: translate(5px, 5px);
+}
+
+#carouselExampleCaptions .carousel-control-prev-icon,
+#carouselExampleCaptions .carousel-control-next-icon {
+  filter: invert(100%) !important;
+}
+
+#carouselExampleCaptions .carousel-control-prev:hover,
+#carouselExampleCaptions .carousel-control-next:hover {
+  color: #1a4a7b !important;
+}
+
+
+/*FAMOUS COOKING CHANNELS*/
+.persona{
+  margin: 5rem 0rem !important;
+}
+
+.iconbtn {
+  filter: invert(100%) !important;
+}
+
+/*CUISINES*/
+.cuisines{
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+
+/* FOOTER STYLING */
+.footer {
+  box-shadow: 0px -2px 11px -2px salmon;
+  flex:1;
+}
+
+.btn {
+  border: 2px solid rgb(21, 21, 104);
+}
+
+.btn:hover {
+  background-color: rgb(21, 21, 104) !important;
+}
+
+.title {
+  color: rgb(21, 21, 104);
+}
+
+/* CONTACT PAGE STYLING */
+.btnhover:hover{
+  color: white;
+}
+
+
+/* RECIPES STYLING */
+.searchicon{
+  margin: 0.3rem 0.7rem;
+  cursor: pointer;
+
+}
+
+.searchicon:hover{
+  border: 2px solid rgb(21, 21, 104);
+  padding: 5px 6px;
+  margin: -0.1rem 0.2rem;
+  border-radius: 3px;
+}
+
+.searchbox input{
+  padding: 0.3rem 1.2rem;
+}
+.result{
+
+  min-height: 40vh;
+  flex: 1;
+}
+
+.lunchicon{
+  font-size: 5rem !important;
+  display: block !important;
+  margin: 5rem auto !important;
+
+}
+
+
+/*RESPONSIVENESS NAVBAR*/
+@media only screen and (max-width: 840px) {
+
+  .navelements{
+    display: none;
+  }
+  .resnavelements {
+    display: none;
+    box-shadow:0px 4px 20px -6px #ae8c8c;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 80px; /* Adjust top position based on your navbar height */
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+  }
+
+  .navbartoggle{
+    display: block;
+  }
+
+  .navbar{
+    padding: 0rem 1.2rem;
+  }
+
+  .resimg{
+    width: 70%;
+    display: block;
+    margin: auto;
+
+  }
+
+.restopimg{
+  margin-top: 4rem;
+}
+
+  .resblock h1{
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+  .resblock p{
+    padding: 0rem 2rem;
+  }
+}
+
+
+/* ------------------------------------------------------------- */
+
